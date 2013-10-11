@@ -1,0 +1,14 @@
+<div class="link-display">
+  <h2>
+  <%= @link.url %>
+  <%= @link.short_url %>
+  <%= @link.created_at %>
+  </h2>
+</div>
+
+<% @link.comments.each do |comment| %>
+  <div class="comment">  
+    <div><%= comment.body %></div>
+    <div>posted by <%= comment.author %> on <%= comment.created_at %></div>
+  </div>
+<% end %>
