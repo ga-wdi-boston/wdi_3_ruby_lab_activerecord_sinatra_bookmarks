@@ -25,6 +25,13 @@ end
 post '/link/shorten' do #think of this as an update
 	@link = Link.create(long_url: params[:long_url])
 	@link.update(short_url: "localhost:4567/#{@link["id"]}")
-redirect "/link/index"
+	redirect "/link/index"
 end
-	
+
+get '/link/:id/comments' do
+	@comment = Comment.find(params[:id])
+	erb :comment_link
+end
+
+post '/comment/create' do 
+	@comment = Comment.create()

@@ -8,5 +8,6 @@
 	<% @links.each do |link| %>
 	<p> <%= link["long_url"] %> </p>
 	<p> <a href="<%=link["long_url"]%>"> <%= link["short_url"] %> </a> </p>
+	<p><a href="/link/<%= link.id %>/comments">Comments</a></p>
 	<% end %>
 </div>
