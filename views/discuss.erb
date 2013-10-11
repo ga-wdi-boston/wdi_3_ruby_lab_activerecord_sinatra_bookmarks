@@ -1,8 +1,8 @@
 <div class="link-display">
   <h2>
-  <%= @link.url %>
-  <%= @link.short_url %>
-  <%= @link.created_at %>
+  <div>Your link: <%= @link.url %></div>
+  <div>Shortened to: localhost:4567/shortlink/<%= @link.short_url %></div>
+  <div>Created at: <%= @link.created_at %></div>
   </h2>
 </div>
 
@@ -12,3 +12,11 @@
     <div>posted by <%= comment.author %> on <%= comment.created_at %></div>
   </div>
 <% end %>
+
+<div class="comment-form">
+  <div><h2>Add your comment:</h2></div>
+     <div class="form">
+     <form action="/shortlink/discuss/<%= @link.id %>/add-comment" method="post">
+       URL: <input type="text" name="comment"><button type="submit">Comment!</button></div>
+     </form>
+     </div>

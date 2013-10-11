@@ -3,13 +3,16 @@
      <div class="form">
      <form action="/shortlink/shorten" method="post">
        URL: <input type="text" name="url"><button type="submit">Shorten!</button></div>
-     	
-</form></div>
+     </form>
+     </div>
 
 <div class="all_links_index">
 <% @links.each do |link| %>
 
-  <div class="link_index"><a href="<%=link.url%>"><%= link.url %></a>  <a href="/shortlink/<%=link.short_url%>"><%= link.short_url %></a>  <a href="/shortlink/discuss/<%= link.short_url %>">discuss</a></div>
+  <div class="link_index">
+    <a href="<%=link.url%>"><%= link.url %></a>  
+    <a href="/shortlink/<%=link.id%>">http://localhost/4567/<%= link.short_url %></a>  
+    <a href="/shortlink/discuss/<%= link.id %>">discuss</a></div>
 
 <% end %>
 </div>

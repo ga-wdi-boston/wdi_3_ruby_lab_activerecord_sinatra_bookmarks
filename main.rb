@@ -22,19 +22,26 @@ get '/shortlink/' do
 end
 
 post '/shortlink/shorten' do
-  short_url = (0...5).map{ ('a'..'z').to_a[rand(26)] }.join
-  Link.create(url: params[:url], short_url: short_url)
+  random_letters = (0...5).map{ ('a'..'z').to_a[rand(26)] }.join
+  newlink = Link.create(url: params[:url])
+  newlink.short_url = "#{newlink.id} + #{random_letters}"
   redirect '/shortlink/'
 end
 
-get '/shortlink/discuss/:short_url' do
-  @link = Link.where(short_url = params[:short_url])
+get '/shortlink/discuss/:id' do
+  @link = Link.find(params[:id])
   erb :discuss
 end
 
-get '/shortlink/:short_url' do
-  link = Link.where(short_url = params[:short_url])
-  redirect "link.url"
+post '/shortlink/discuss/:id/add-comment' do
+  link_id = Link.find(params[:id]).id
+  Comment.create(author: params[:author], body: params[:body], link_id: link_id)
+  redirect "/shortlink/discuss/#{params[:id]}"
+end
+
+get '/shortlink/:id' do
+  link = Link.find(params[:id]).url
+  redirect link
 end
 
 
