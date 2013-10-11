@@ -1,7 +1,7 @@
 <div class="post-container">
 	<%a = (0...3).map { (65 + rand(26)).chr }.join%>
 	Long Link: <a href="http://<%= @link.long_url %>">
-		www.<%=a%>.com</a>
+		http://<%=@link.long_url%>.com</a>
 	</br>
 	Short Link: 
 	<a href="http://<%= @link.long_url %>">
@@ -9,8 +9,15 @@
 	</br>
 </div>
 
-<!-- 	<% @post.discussions.each do |comment|%>
-	Author: <%= comment.author%> 
-	</br><%= comment.body%>
+
+<% @link.discussions.each do |discussion|%>
+	Author: <%= discussion.author%> 
+	</br><%= discussion.body%>
 	</br></br>
-	<% end %> -->
+	<% end %> 
+
+<form action="/links/comment/<%=@link.id%>" method="post">
+	<div>Author: <input type="string" name="author" /></div>
+	<div>Body: <textarea name="body" cols="60" rows="10"></textarea></div>
+	<button type="submit">Create Comment</button>
+</form>

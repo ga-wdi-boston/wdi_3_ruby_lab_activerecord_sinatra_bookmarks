@@ -29,3 +29,9 @@ post '/links/create' do
   redirect "/links/"
 end
 
+post '/links/comment/:id' do
+  @link = Link.find(params[:id])
+  @link.discussions.create(author: params[:author], body: params[:body])
+  redirect "/links/#{params[:id]}"
+end
+
