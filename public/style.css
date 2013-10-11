@@ -1,0 +1,5 @@
+.link-index li{
+	display: inline;
+	margin: 0 40px 0 40px;
+	background: orange;
+}
