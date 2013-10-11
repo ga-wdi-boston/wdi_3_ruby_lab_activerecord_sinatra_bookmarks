@@ -1,0 +1,7 @@
+<h2><%= @link.originalurl %></h2>
+<h2><%= @link.shorturl %></h2>
+<h3><%= @link.created_at.strftime("Created on %m/%d/%y at %I:%M%p") %></h3>
+
+<form action="/links/back" method="post">
+  <button type="submit">Back</button>
+</form>

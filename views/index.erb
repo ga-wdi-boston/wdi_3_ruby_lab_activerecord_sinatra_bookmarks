@@ -1,0 +1,17 @@
+<div class="container">
+  <% @links.each do |link| %>
+    <a href="/links/<%= link.id %>"><h2 class="index-title"><%= link.originalurl %></h2></a>
+    <a href="/links/<%= link.id %>"><h2 class="index-title"><%= link.shorturl %></h2></a>
+    <h3 class="index-title"><%= link.created_at.strftime("Created on %m/%d/%y at %I:%M%p") %></h3>
+  <form action="/links/<%= link.id %>/discuss" method="get">
+    <input type="submit" name="discuss" value="Discuss" />
+  </form>
+  <form action="/links/<%= link.id %>/delete" method="post">
+    <input type="submit" name="delete" value="Delete" />
+  </form>
+<% end %>
+
+<form action="/links/create" method="post">
+  <div>URL: <input type="text" name="originalurl" /></div>
+  <button type="submit">Create New Short URL</button>
+</form>
