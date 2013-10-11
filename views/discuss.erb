@@ -5,3 +5,12 @@
 <form action="/links/back" method="post">
   <button type="submit">Back</button>
 </form>
+<% unless @link.comments.empty? %>
+<% @link.comments.each do |comment| %>
+
+<h5><%= comment.author %></h5>
+<h5><%= comment.body %></h5>
+<% end %>
+<% end %>
+
+New comment Button

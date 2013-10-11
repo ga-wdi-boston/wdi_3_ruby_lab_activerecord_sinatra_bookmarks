@@ -13,7 +13,7 @@ class Link < ActiveRecord::Base
 end
 
 class Comment < ActiveRecord::Base
-  belongs_to :post
+  belongs_to :link
 end
 
 get '/' do
