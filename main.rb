@@ -8,24 +8,30 @@ set :database, {adapter: 'postgresql',
                 database: 'url_short_db',
                 host: 'localhost'}
 
+class Url < ActiveRecord::Base
+  has_many :comments
+end
+
 get '/index' do
-  
-  erb: url_index
+
+  erb :url_index
 end
 
 get '/index/new' do
   
-  erb: url_new
+  erb :url_new
 end
 
 get '/index/discuss' do
-  
-  erb: url_discuss
+  @urls = Url.all
+binding.pry
+  erb :url_discuss
 end
 
 get '/index/:id' do
-  
+    @url = Url.find(params[:id])
 end
 
 post 'index/create' do
+  #where the hard shit will go down
 end
