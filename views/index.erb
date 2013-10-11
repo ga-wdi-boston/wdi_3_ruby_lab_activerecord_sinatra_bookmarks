@@ -13,6 +13,7 @@
     <a href="<%=link.url%>"><%= link.url %></a>  
     <a href="/shortlink/<%=link.id%>">http://localhost/4567/<%= link.short_url %></a>  
     <a href="/shortlink/discuss/<%= link.id %>">discuss</a></div>
+    <form action="/shortlink/<%= link.id %>/delete-link", method="post"><button type="submit">delete</button></form>
 
 <% end %>
 </div>
