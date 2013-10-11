@@ -1,0 +1,20 @@
+
+<h1>Keep that link tight</h1>
+<form action="/links/create" method="post">
+	<div>Long Link: <input type="text" name="long_url" /></div>
+	<button type="submit">Go down</button>
+</form>
+
+
+<div class="post-container">
+<% @links.each do |link| %>
+	<%a = (0...3).map { (65 + rand(26)).chr }.join%>
+	Long Link: <a href="http://<%= link.long_url %>">
+		<%=link.long_url%></a>
+	Short Link: 
+	<a href="http://<%= link.long_url %>">
+		www.<%=a%>.com</a>
+	<a href="/links/<%= link.id %>">Discuss </a>
+	</br>
+<% end %>
+</div>
