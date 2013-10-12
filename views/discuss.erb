@@ -7,10 +7,17 @@
 </form>
 <% unless @link.comments.empty? %>
 <% @link.comments.each do |comment| %>
-
-<h5><%= comment.author %></h5>
-<h5><%= comment.body %></h5>
+  <h5><%= comment.author %></h5>
+  <p><%= comment.body %></p>
+   <form action="/links/<%= comment.id %>/discuss/delete_comment" method="post">
+    <input type="submit" name="delete" value="Delete" />
+  </form>
 <% end %>
 <% end %>
 
-New comment Button
+<form action="/links/<%= @link.id %>/discuss/comment" method="post">
+  <div>New Comment: <textarea name="body" cols="60" rows="10"></textarea></div>
+  <div>Author: <input type="text" name="author" /></div>
+  <button type="submit">Submit Comment</button>
+</form>
+

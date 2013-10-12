@@ -38,12 +38,22 @@ post '/links/create' do
   redirect '/'
 end
 
-post '/links/:id/delete' do
-  Link.find(params[:id]).destroy
-  redirect '/'
-end
-
 post '/links/back' do
   redirect '/'
 end
 
+post '/links/:id/discuss/comment' do
+  Link.find(params[:id]).comments.create(author: params[:author], body: params[:body])
+  redirect "/links/#{params[:id]}/discuss"
+end
+
+post '/links/:id/discuss/delete_comment' do
+  redirectid = Comment.find(params[:id]).link_id
+  Comment.find(params[:id]).destroy
+  redirect "/links/#{redirectid}/discuss"
+end
+
+post '/links/:id/delete' do
+  Link.find(params[:id]).destroy
+  redirect '/'
+end
