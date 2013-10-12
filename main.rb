@@ -45,9 +45,10 @@ post '/shortlinks/shorten' do
 end
 
 #link_solo.erb submit comment and redirect to link_index.erb
-post 'shortlinks/comment' do
-	Comment.create(params[:id], author: params[:author], body: params[:body])
-	redirect '/shortlinks'
+post 'shortlinks/comment/:id' do
+	@link = Link.find(params[:id])
+	@link.Comment.create(params[:id], author: params[:author], body: params[:body])
+	redirect '/shortlinks/:id'
 end
 
 

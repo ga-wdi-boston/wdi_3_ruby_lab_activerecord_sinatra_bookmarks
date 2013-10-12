@@ -1,4 +1,14 @@
+<div class="link-container">
 	<ul class="link-index">
 		<li><%= @link.url %></li>
 		<li><%= @link.short_url %></li>
 	</ul>
+</div>
+<div class="discussion">
+	<h3>Discuss</h3>
+	<form action="/shortlinks/comment/<%= @link.id %>" method="post">
+	  <div>Name: <input type="string" name="author" /></div>
+	  <div>Comment: <textarea name="body" cols="60" rows="10"></textarea></div>
+	  <button type="submit">Submit Comment</button>
+	</form>
+</div>
