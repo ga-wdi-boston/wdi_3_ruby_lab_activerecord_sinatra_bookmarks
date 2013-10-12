@@ -1,0 +1,16 @@
+body {
+	background-color: #95e0ff;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+.links {
+	padding: 10px, 40px;
+}

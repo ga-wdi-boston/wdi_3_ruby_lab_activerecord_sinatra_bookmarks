@@ -1,0 +1,18 @@
+<!-- form for shortening, w/ post link -->
+<!-- index of original, short, discuss link -->
+
+<form action="/shortener/create" method="post">
+	<div><input type="string" name="original" /></div>
+	<button type="submit">Shorten</button>
+</form>
+
+<% @shorts.each do |link| %>
+<div class="links">
+<span class="original">Original: <a href="http://<%= link[:original] %>"><%= link.original %></a></span>
+<span class="short">Short URL: <a href="/shortener/<%= link.id %>"><%= link.url %>.em</a></span>
+<a href="/shortener/discuss/<%= link["id"] %>">Discuss</a>
+</div>
+
+<form action="/shortener/<%= link.id %>/delete" method="post"><input type="submit" name="delete" value="delete" />
+</form>
+<% end %>
