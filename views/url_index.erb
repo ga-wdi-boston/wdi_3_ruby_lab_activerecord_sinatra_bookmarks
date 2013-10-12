@@ -1,10 +1,11 @@
 <table>
 <!--@urls is coming in as Url.all-->
 <% @urls.each do |url| %> 
-
+<!-- this will need to be changed later, but is a placeholdervaule for the new url -->
+<% url.new_url = "#{rand(26)}.com" %>
 <tr>
   <td><%= url.long_url %></td> <!--display Url.long_url -->
-  <td><%= url.short_url %></td> <!--display Url.short_url -->
+  <td><%= url.new_url %></td> <!--display Url.short_url -->
   <td><a href="/<%=url.id%>">Discuss this URL!</a></td> <!-link for discussion -->
 </tr>
 <%=@urls.all%>

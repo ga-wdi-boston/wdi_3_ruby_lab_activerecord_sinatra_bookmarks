@@ -18,6 +18,7 @@ end
 
 get '/index' do
   @urls = Url.all
+  binding.pry
   erb :url_index
 end
 
@@ -44,6 +45,7 @@ post 'index/create' do
   @urls = Url.long_url
 #this is my attempt at converting the long url to short url
   @urls.each do |url|
+    url.new_url= 'foo.com'
 
 
  redirect '/index'
