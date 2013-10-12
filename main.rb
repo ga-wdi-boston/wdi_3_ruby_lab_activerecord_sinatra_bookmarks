@@ -34,14 +34,7 @@ get '/index/new' do
   erb :url_new
 end
 
-#i deleted the /discuss path and will be included in/:id
-get '/index/:id' do
-  url_id = params[:id]
-    @url = Url.find(params[:id])
-  erb :url_discuss
-end
-
-post 'index/create' do
+post '/index/create' do
   @urls = Url.long_url
 #this is my attempt at converting the long url to short url
   @urls.each do |url|
@@ -50,6 +43,15 @@ post 'index/create' do
 
  redirect '/index'
   end
+
+
+#i deleted the /discuss path and will be included in/:id
+get '/index/:id' do
+  url_id = params[:id]
+    @url = Url.find(params[:id])
+  erb :url_discuss
+end
+
 
 #I am adding a post to update the comments table when a new comment is made in the discussion page
 

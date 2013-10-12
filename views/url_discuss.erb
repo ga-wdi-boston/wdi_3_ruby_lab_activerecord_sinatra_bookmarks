@@ -4,8 +4,10 @@
 <p><a href="<%= @url.long_url%>"></a></p> <!--original url href will point to orig_url -->
 <p><a href="<%=@url.new_url%>"></a></p> <!--new url, href will point to new url -->
 <!--############## New comment section ##################-->
-<form action="/create">
+<form action="/index/<%= @url.id %>"
   <input type="text" name="title">Title of Blog post</input>
   <textarea name="body" cols="60" rows="10"></textarea>
+  <button type="submit" value="Submit Comment" action="/index/<%= @url.id %>">Submit Comment</button>
 </form>
+
 <!--############## Display comment section ##################-->
