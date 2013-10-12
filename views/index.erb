@@ -1,0 +1,15 @@
+<% @links.each do |link| %>
+	<p>
+		<%= link.link %><br />
+		<a href="http://localhost:4567/<%= link.shortened %>" target='_blank'>localhost:4567/<%= link.shortened %></a><br />
+		<span class='comments_links'><a href="/comments/<%= link.id %>">comments</a> | <a href="/delete/<%= link.id %>">delete</a></span>
+	</p>
+<% end %>
+
+<div id='new-link'>
+	<strong>shorten a url:</strong>
+	<form action='/create' method='post'>
+		<input type='text' name='url' size=75 /><br />
+		<button type='submit'>Submit</button>
+	</form>
+</div>
