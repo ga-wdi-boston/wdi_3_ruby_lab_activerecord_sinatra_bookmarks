@@ -21,6 +21,13 @@ get '/index' do
   erb :url_index
 end
 
+
+#I am thinking that this will allow me to print the time created, but I am unsure and will leave this commented out until the rest is working
+# get '/index/time' do
+#   @urls = Url.all.order("created_at DESC")
+#   erb :url_index
+# end
+
 get '/index/new' do
   @urls = Url.all
   erb :url_new
@@ -30,6 +37,7 @@ end
 get '/index/:id' do
   url_id = params[:id]
     @url = Url.find(params[:id])
+  erb :url_discuss
 end
 
 post 'index/create' do
@@ -38,7 +46,9 @@ post 'index/create' do
   @urls.each do |url|
 
 
- redirect ''
+ redirect '/index'
   end
+
+#I am adding a post to update the comments table when a new comment is made in the discussion page
 
 end

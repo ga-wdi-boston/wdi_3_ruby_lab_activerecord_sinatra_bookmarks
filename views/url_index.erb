@@ -1,11 +1,15 @@
 <table>
 <!--@urls is coming in as Url.all-->
 <% @urls.each do |url| %> 
+
 <tr>
-  <td></td> <!--display Url.long_url -->
-  <td></td> <!--display Url.short_url -->
-  <td></td>
+  <td><%= url.long_url %></td> <!--display Url.long_url -->
+  <td><%= url.short_url %></td> <!--display Url.short_url -->
+  <td><a href="/<%=url.id%>">Discuss this URL!</a></td> <!-link for discussion -->
 </tr>
 <%=@urls.all%>
 <% end %>
 </table>
+
+<!--WHERE DOES THIS POINT TO? -->
+<button type="submit" class="button" value="Create a Short URL"></button>
