@@ -1,11 +1,12 @@
 <% @links.each do |link| %>
 	<ul class="link-index">
-	<li><%= link.url %></li>
-	<li><%= link.short_url %></li>
+		<li><%= link.url %></li>
+		<li><%= link.short_url %></li>
+		<li>
+			<form action="/shortlinks/<%= link.id %>" method="get">
+				<button type="submit">Discuss</button>
+			</form>
+		</li>
 	</ul>
-<form action="" >
-	
-</form>
-
 <% end %>
 
