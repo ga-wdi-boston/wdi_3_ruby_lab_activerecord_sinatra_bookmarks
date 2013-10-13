@@ -39,7 +39,7 @@ post '/index/create' do
 #this is my attempt at converting the long url to short url
   @urls.each do |url|
     url.new_url= 'foo.com'
-
+  end
 
  redirect '/index'
   end
@@ -49,10 +49,9 @@ post '/index/create' do
 get '/index/:id' do
   url_id = params[:id]
     @url = Url.find(params[:id])
+    
   erb :url_discuss
 end
 
 
 #I am adding a post to update the comments table when a new comment is made in the discussion page
-
-end
