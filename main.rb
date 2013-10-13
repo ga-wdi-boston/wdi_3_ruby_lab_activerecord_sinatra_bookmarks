@@ -9,6 +9,11 @@ set :database, {adapter: 'postgresql',
                 host: 'localhost'}
 
 class Url < ActiveRecord::Base
+  #learned about these from a screencast tutorial
+  validates_uniqueness_of :url
+  validates_presence_of :url
+  validates_format_of :url, : with => /^\b((?:https?:\/\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))$/
+
   has_many :comments
 end
 
@@ -46,10 +51,10 @@ post '/index/create' do
 
 
 #i deleted the /discuss path and will be included in/:id
-get '/index/:id' do
-  url_id = params[:id]
-    @url = Url.find(params[:id])
-    
+get '/index/:url_id' do
+  url_id = params[:url_id]
+    @url = Url.find(params[:url_id])
+
   erb :url_discuss
 end
 
