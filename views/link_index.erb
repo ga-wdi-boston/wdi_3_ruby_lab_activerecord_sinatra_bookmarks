@@ -8,13 +8,15 @@
 
 <div class="post-container">
 <% @links.each do |link| %>
-	<%a = (0...3).map { (65 + rand(26)).chr }.join%>
-	Long Link: <a href="http://<%= link.long_url %>">
+	Long Link: <a href="<%= link.long_url %>">
 		<%=link.long_url%></a>
-	Short Link: 
-	<a href="http://<%= link.long_url %>">
-		www.<%=a%>.com</a>
+	Short Link: <a href='<%= link.short_url%>'><%=link.short_url%></a>
+
 	<a href="/links/<%= link.id %>">Discuss </a>
-	</br>
+
+	<form action="/links/<%=link.id%>/delete" method="post">
+	<input type="submit" name="delete link" value="delete" />
+	</form>
+		</br>
 <% end %>
 </div>

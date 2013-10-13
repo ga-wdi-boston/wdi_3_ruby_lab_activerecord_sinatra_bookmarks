@@ -14,9 +14,17 @@ class Discussion < ActiveRecord::Base
   belongs_to :link
 end
 
+
+
 get '/links/' do 
   @links = Link.all
   erb :link_index
+end
+
+post '/links/:id/delete' do
+  @link = Link.find(params[:id])
+  @link.delete
+  redirect "/links/"
 end
 
 get '/links/:id' do
@@ -25,7 +33,11 @@ get '/links/:id' do
 end
 
 post '/links/create' do
-  Link.create(long_url: params[:long_url])
+  new_id = (0...3).map { (1 + rand(8)) }.join
+  @link = Link.create(long_url: params[:long_url])
+  @link[:id] = new_id
+  @link[:short_url] = "localhost:4567/links/#{@link.id}"
+  @link.save
   redirect "/links/"
 end
 
@@ -34,4 +46,6 @@ post '/links/comment/:id' do
   @link.discussions.create(author: params[:author], body: params[:body])
   redirect "/links/#{params[:id]}"
 end
+
+
 
