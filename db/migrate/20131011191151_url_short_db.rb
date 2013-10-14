@@ -3,7 +3,8 @@ class UrlShortDb < ActiveRecord::Migration
     create_table :urls do |t|
       t.string :long_url
       t.string :new_url
-      t.timestamps
+      t.datetime :created_at
+      t.datetime :updated_at
     end
   end
 

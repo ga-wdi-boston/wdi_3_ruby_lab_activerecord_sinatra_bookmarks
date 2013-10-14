@@ -3,11 +3,13 @@ class CreateCommentTable < ActiveRecord::Migration
     create_table :comments do |t|
       t.string :title
       t.text :body
-      t.timestamps
+      t.integer :link_id
+      t.datetime :created_at
+      t.datetime :updated_at
     end
   end
 
   def down
-    drop_table :posts
+    drop_table :comments
   end
 end

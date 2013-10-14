@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20131013163331) do
   create_table "comments", force: true do |t|
     t.string   "title"
     t.text     "body"
+    t.integer  "link_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
