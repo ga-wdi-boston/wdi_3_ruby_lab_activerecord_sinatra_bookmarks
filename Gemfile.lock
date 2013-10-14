@@ -21,6 +21,7 @@ GEM
     backports (3.3.5)
     builder (3.1.4)
     coderay (1.0.9)
+    dotenv (0.9.0)
     google_url_shortener (0.0.8)
       json (>= 1.4.6)
       rest-client (>= 1.6.7)
@@ -71,6 +72,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   google_url_shortener (~> 0.0.8)
   pg
   pry
