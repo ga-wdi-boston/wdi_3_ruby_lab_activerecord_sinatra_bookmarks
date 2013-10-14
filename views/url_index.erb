@@ -1,18 +1,16 @@
-<table>
+
 <!--@urls is coming in as Url.all-->
 <% @urls.each do |url| %> 
 <!-- this will need to be changed later, but is a placeholdervaule for the new url -->
-<% url.new_url = "#{rand(26)}.com" %>
-<tr>
-  <td><%= url.long_url %></td> <!--display Url.long_url -->
-  <td><%= url.new_url %></td> <!--display Url.short_url -->
-  <td><a href="/index/<%=url.url_id%>">Discuss this URL!</a></td> <!-link for discussion -->
-</tr>
+
+ <%= url.long_url %><!--display Url.long_url -->
+  <%= url.new_url %> <!--display Url.short_url -->
+  <a href="/<%=url.url_id%>">Discuss this URL!</a> <!-link for discussion -->
 
 <% end %>
-</table>
+
 
 <!--WHERE DOES THIS POINT TO? -->
-<form action="/index/new" method="get">
+<form action="/new" method="get">
 <button type="submit" class="button" value="Create a Short URL">Create a new short URL</button>
 </form>

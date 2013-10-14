@@ -21,39 +21,39 @@ class Comment < ActiveRecord::Base
   belongs_to :url
 end
 
-get '/index' do
-  @urls = Url.all
-  binding.pry
+get '/' do
+  #this assigns urls instant var to the entire Url table and sorts by updated_at value in decending order
+  @urls = Url.all.order("updated_at DESC")
   erb :url_index
 end
 
 
 #I am thinking that this will allow me to print the time created, but I am unsure and will leave this commented out until the rest is working
-# get '/index/time' do
+# get '/time' do
 #   @urls = Url.all.order("created_at DESC")
 #   erb :url_index
 # end
 
-get '/index/new' do
+get '/new' do
   @urls = Url.all
   erb :url_new
 end
 
-post '/index/create' do
+post '/create' do
   @urls = Url.long_url
 #this is my attempt at converting the long url to short url
   @urls.each do |url|
     url.new_url= 'foo.com'
   end
 
- redirect '/index'
+ redirect '/'
 end
 
 
 #i deleted the /discuss path and will be included in/:id
-get '/index/:url_id' do
-  url_id = params[:url_id]
-    @url = Url.find(params[:url_id])
+get '/:id' do
+  url_id = params[:id]
+    @url = Url.find(params[:id])
 
   erb :url_discuss
 end
