@@ -50,7 +50,7 @@ post '/create' do
 end
 
 
-#i deleted the /discuss path and will be included in/:id
+#i deleted the /discuss path and will be included in /:id
 get '/:id' do
   url_id = params[:id]
     @url = Url.find(params[:id])
