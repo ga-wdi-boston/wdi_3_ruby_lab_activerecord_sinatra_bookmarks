@@ -9,10 +9,10 @@ set :database, {adapter: 'postgresql',
                 host: 'localhost'}
 
 class Url < ActiveRecord::Base
-  #learned about these from a screencast tutorial
-  validates_uniqueness_of :url
-  validates_presence_of :url
-  validates_format_of :url, : with => /^\b((?:https?:\/\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))$/
+  # #learned about these from a screencast tutorial
+  # validates_uniqueness_of :url
+  # validates_presence_of :url
+  # validates_format_of :url, : with => /^\b((?:https?:\/\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))$/
 
   has_many :comments
 end
@@ -47,7 +47,7 @@ post '/index/create' do
   end
 
  redirect '/index'
-  end
+end
 
 
 #i deleted the /discuss path and will be included in/:id

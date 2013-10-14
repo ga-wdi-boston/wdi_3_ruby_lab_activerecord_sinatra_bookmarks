@@ -6,9 +6,9 @@
 <tr>
   <td><%= url.long_url %></td> <!--display Url.long_url -->
   <td><%= url.new_url %></td> <!--display Url.short_url -->
-  <td><a href="/index/<%=url.id%>">Discuss this URL!</a></td> <!-link for discussion -->
+  <td><a href="/index/<%=url.url_id%>">Discuss this URL!</a></td> <!-link for discussion -->
 </tr>
-<%=@urls.all%>
+
 <% end %>
 </table>
 
