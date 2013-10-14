@@ -36,11 +36,11 @@ end
 
 get '/new' do
   @urls = Url.all
-  erb :url_new
+  erb :url_index
 end
-
+#!_!_!_!_! i will now need to create an input with the name "long_url"
 post '/create' do
-  @urls = Url.long_url
+  new_id = Url.long_url(long_url: params[:long_url])
 #this is my attempt at converting the long url to short url
   @urls.each do |url|
     url.new_url= 'foo.com'
