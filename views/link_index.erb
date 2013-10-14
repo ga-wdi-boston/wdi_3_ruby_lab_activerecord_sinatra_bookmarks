@@ -1,7 +1,7 @@
 <% @links.each do |link| %>
 	<ul class="link-index">
-		<li><%= link.url %></li>
-		<li><%= link.short_url %></li>
+		<li><a href ="<%= link.url %>"><%= link.url %></a></li>
+		<li><a href="<%= link.short_url %>"><%= link.short_url %></a></li>
 		<li>
 			<form action="/shortlinks/<%= link.id %>" method="get">
 				<button type="submit">Discuss</button>
@@ -9,4 +9,9 @@
 		</li>
 	</ul>
 <% end %>
+
+<form action="/shortlinks/shorten" method="post">
+  <div>Link: <input type="string" name="long_url" /></div>
+  <button type="submit">Shorten Link</button>
+</form>
 

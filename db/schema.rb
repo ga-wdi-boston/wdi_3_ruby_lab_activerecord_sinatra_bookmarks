@@ -16,14 +16,18 @@ ActiveRecord::Schema.define(version: 20131011192458) do
   enable_extension "plpgsql"
 
   create_table "comments", force: true do |t|
-    t.text "author"
-    t.text "body"
+    t.text     "author"
+    t.text     "body"
+    t.integer  "link_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "links", force: true do |t|
     t.text     "url"
     t.text     "short_url"
     t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

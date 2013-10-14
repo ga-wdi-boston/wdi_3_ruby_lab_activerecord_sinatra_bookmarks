@@ -3,7 +3,7 @@ class CreateShortlinks < ActiveRecord::Migration
 	  	create_table :links do |t|
 	  	t.text :url
 	  	t.text :short_url
-		t.timestamp :created_at
+		t.timestamps
 	end
   end
 

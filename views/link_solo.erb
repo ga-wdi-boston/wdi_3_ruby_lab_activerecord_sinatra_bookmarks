@@ -6,9 +6,17 @@
 </div>
 <div class="discussion">
 	<h3>Discuss</h3>
+	<% @link.comments.each do |comment| %>
+	<ul>
+		<li><%= comment.body %></li>	
+	</ul>
+	<% end %>
 	<form action="/shortlinks/comment/<%= @link.id %>" method="post">
 	  <div>Name: <input type="string" name="author" /></div>
 	  <div>Comment: <textarea name="body" cols="60" rows="10"></textarea></div>
 	  <button type="submit">Submit Comment</button>
+	</form>
+	<form method="link" action="/shortlinks">
+		<input type="submit" value="Cancel">
 	</form>
 </div>
