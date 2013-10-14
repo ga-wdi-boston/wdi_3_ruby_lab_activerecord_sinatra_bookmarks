@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Long:</strong>
-  <%= @short.long %>
-</p>
+<h3>Your URL was shortened</h3>
 
-<%= link_to 'Edit', edit_short_path(@short) %> |
-<%= link_to 'Back', shorts_path %>
+<p>The new short URL is <%= link_to short_url(@short), short_url(@short) %>.</p>
+
+<p>The URL leads to <%= link_to @short.long, @short.long %>.</p>
+
+<p><%= link_to 'Shorten another URL', new_short_path %></p>

@@ -12,9 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :long %><br>
+    <%= f.label "Long URL" %><br />
     <%= f.text_field :long %>
   </div>
+
+  <div class="field">
+    <%= f.label "Description (optional)" %><br />
+    <%= f.text_field :desc %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
