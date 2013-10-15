@@ -38,25 +38,35 @@ get '/new' do
   @urls = Url.all
   erb :url_index
 end
-#!_!_!_!_! i will now need to create an input with the name "long_url"
+#!_!_!_!_! i will now need to create an input with the name "long_url"b
+
+get '/:id/discuss' do
+  @url = Url.find(params[:id])
+  erb :url_discuss
+end
+
+#i deleted the /discuss path and will be included in /:id
+get '/:id' do
+ redirect_url = Url.find(params[:id]).long_url
+
+  redirect "http://#{redirect_url}"
+end
+
 post '/create' do
-  new_id = Url.long_url(long_url: params[:long_url])
-#this is my attempt at converting the long url to short url
-  @urls.each do |url|
-    url.new_url= 'foo.com'
-  end
+  new_id = Url.long_url(long_url: params[:long_url]).id
+  new_url = "/#{new_id}"
+  Url.update(new_id, new_url: new_url)
 
  redirect '/'
 end
 
-
-#i deleted the /discuss path and will be included in /:id
-get '/:id' do
-  url_id = params[:id]
-    @url = Url.find(params[:id])
-
-  erb :url_discuss
+post '/:id/discuss/delete_comment' do
+  redirect_id = Comment.find(params[:id]).url_id
+  Comment.find(params[:id]).destroy
+  redirect "/#{redirect_id}/discuss"
 end
 
-
-#I am adding a post to update the comments table when a new comment is made in the discussion page
+post '/:id/delete' do
+  Url.find(params[:id]).destroy
+  redirect '/'
+end

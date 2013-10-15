@@ -13,6 +13,12 @@
     <a href="/<%= url.id %>"><%= url.new_url %></a>
   </h2> 
 
+  <!-- The following is a h3 that has the text of: the created_at time on each link row formatted by the method .strftime to format date according to directives given within the parameters. reference: http://apidock.com/ruby/DateTime/strftime-->
+
+  <h3>
+  <%= url.created_at.strftime("Created on %m/%d/%y at %I:%M%p") %>
+  </h3>
+
   <!--display Url.new_url -->
   
   <a href="/<%=url.id%>">Discuss this URL!</a> 
