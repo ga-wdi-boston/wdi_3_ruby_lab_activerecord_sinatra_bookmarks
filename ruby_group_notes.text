@@ -1,0 +1,14 @@
+10.11.13
+
+rails girls
+reveal-cke
+
+drying up rspec
+    shared examples
+    sheard conexts helper methods 
+    including modules
+don't dry too early
+don't sacrifice readability or understandibility
+place shared examples in spec
+CRUD? described_class
+rock star

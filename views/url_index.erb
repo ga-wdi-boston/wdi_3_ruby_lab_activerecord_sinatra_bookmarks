@@ -1,0 +1,37 @@
+
+<!--@urls is coming in as Url.all-->
+<% @urls.each do |url| %> 
+<!-- this will need to be changed later, but is a placeholdervaule for the new url -->
+
+ <h2>
+  <a href="/<%= url.id %>"><%= url.long_url %></a>
+ </h2>
+ 
+ <!--display Url.long_url -->
+
+  <h2>
+    <a href="/<%= url.id %>"><%= url.new_url %></a>
+  </h2> 
+
+  <!-- The following is a h3 that has the text of: the created_at time on each link row formatted by the method .strftime to format date according to directives given within the parameters. reference: http://apidock.com/ruby/DateTime/strftime-->
+
+  <h3>
+  <%= url.created_at.strftime("Created on %m/%d/%y at %I:%M%p") %>
+  </h3>
+
+  <!--display Url.new_url -->
+  
+  <a href="/<%=url.id%>">Discuss this URL!</a> 
+
+  <!-link for discussion -->
+
+<% end %>
+
+<!--this will get the long_form url -->
+<form action ="/create" method="post">
+<label for="long_url">Enter a Url:</label>
+<input type="text" name="long_url" class="fieldset" />
+<button type="submit" class="button" value="">Create a Short Url!</button>
+</form>
+
+
