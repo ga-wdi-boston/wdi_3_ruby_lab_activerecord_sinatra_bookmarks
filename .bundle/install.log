@@ -1,0 +1,22 @@
+# Logfile created on 2014-01-24 16:00:21 -0500 by logger.rb/41954
+I, [2014-01-24T16:00:21.154365 #4541]  INFO -- : 0:  backports (3.4.0) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T16:00:21.154774 #4541]  INFO -- : 0:  multi_json (1.8.4) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T16:00:21.155098 #4541]  INFO -- : 0:  rack (1.5.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T16:00:21.155407 #4541]  INFO -- : 0:  rack-protection (1.5.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T16:00:21.155712 #4541]  INFO -- : 0:  rack-test (0.6.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T16:00:21.156019 #4541]  INFO -- : 0:  tilt (1.4.1) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T16:00:21.156313 #4541]  INFO -- : 0:  sinatra (1.4.4) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T16:00:21.156606 #4541]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T16:00:21.156848 #4541]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T16:00:21.157129 #4541]  INFO -- : 0:  bundler (1.5.1) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/bundler-1.5.1.gemspec
+I, [2014-01-24T16:21:58.937932 #4769]  INFO -- : 0:  backports (3.4.0) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T16:21:58.938326 #4769]  INFO -- : 0:  multi_json (1.8.4) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T16:21:58.938600 #4769]  INFO -- : 0:  pg (0.17.1) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/pg-0.17.1.gemspec
+I, [2014-01-24T16:21:58.938866 #4769]  INFO -- : 0:  rack (1.5.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T16:21:58.939123 #4769]  INFO -- : 0:  rack-protection (1.5.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T16:21:58.939365 #4769]  INFO -- : 0:  rack-test (0.6.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T16:21:58.939601 #4769]  INFO -- : 0:  tilt (1.4.1) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T16:21:58.939835 #4769]  INFO -- : 0:  sinatra (1.4.4) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T16:21:58.940067 #4769]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T16:21:58.940297 #4769]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T16:21:58.940516 #4769]  INFO -- : 0:  bundler (1.5.1) from /Users/praggya/.rvm/gems/ruby-2.0.0-p353/specifications/bundler-1.5.1.gemspec
