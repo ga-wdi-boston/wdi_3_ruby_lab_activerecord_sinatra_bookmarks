@@ -1,17 +1,31 @@
-<% @bookmarks.each do |bookmark| %>
+<h1>Bookmarker</h1>
+
+<div class="wrapper">
+
+<div class="form">
+	<form action="/bookmarks" method="POST">
+		Name: <input type="text" name="name">
+		URL: <input type="text" name="link">
+		<input type="submit" value="Create">
+	</form>
+</div>
+
+
 	<div class="bookmark_name">
-	<%= bookmark["name"] %>
+	<ul>
+		<% @bookmarks.each do |bookmark| %>
+			<li><%= bookmark["name"] %></li>
+			<% end %>
+	</ul>
 	</div>
-<% end %>
 
-<% @bookmarks.each do |bookmark| %>
 	<div class="bookmark_url">
-	<%= bookmark["link"] %>
+	<ul>
+		<% @bookmarks.each do |bookmark| %>
+			<li><a href="<%= bookmark["link"] %>"><%= bookmark["link"] %></a></li>
+			<% end %>
+	</ul>
 	</div>
-<% end %>
 
-<form action="/bookmarks" method="POST">
-	Name: <input type="text" name="name">
-	URL: <input type="text" name="link">
-	<input type="submit" value="Create">
-</form>
+
+</div>

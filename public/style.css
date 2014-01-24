@@ -1,0 +1,52 @@
+html {
+	background-image: url('http://forbiscuit.com/images/bokeh_dark.jpg');
+	background-size: cover;
+	font-family: Rambla, sans-serif;
+	color: white;
+	text-align: center;
+}
+
+div.wrapper {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+h1 {
+	font-size: 160px;
+	text-align: center;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	margin-bottom: 50px;
+}
+
+div.form {
+	margin-bottom: 30px;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(1,1,1,0.5);
+}
+
+div.bookmark_name {
+	float: left;
+	width: 47%;
+	text-align: right;
+	line-height: 28px;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(1,1,1,0.5);
+}
+
+div.bookmark_url {
+	float: right;
+	width: 47%;
+	text-align: left;
+	line-height: 28px;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(1,1,1,0.5);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color:orange;
+}
