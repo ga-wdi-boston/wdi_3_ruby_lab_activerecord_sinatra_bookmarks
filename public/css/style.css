@@ -18,7 +18,6 @@ section {
   padding: 10px;
   background-color: #000;
   color: #FFF;
-  text-align: center;
   box-shadow: 4px 4px 4px #FFCC33;
 }
 
@@ -33,7 +32,9 @@ section {
   position: absolute;
   right: 0;
   top: 0;
+  text-align: center;
 }
+
 
 a {
   font-size: 1.2em;
@@ -58,10 +59,17 @@ input {
   transition: border .5s ease-in-out;
 }
 
+#css_fix {
+  position: relative;
+  left: 10px;
+}
+
 input[type='submit'] {
   font-size: 1.2em;
   background-color: #FFF;
   border: 2px solid #FFF;
+  position: relative;
+  left: 25%;
 }
 
 input[type='submit']:hover {
