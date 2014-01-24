@@ -1,9 +1,14 @@
-<% @bookmarks.each do |link|%>
-  <%= link %>
-<% end %>
+<h1>Enter the site name and link to add it to your favorites:</h1>
 
+<div>
 <form action="/bookmarks" method="POST">
-Name: <input type="text" name="name">
-Link: <input type="text" name="link">
-<input type="submit" value="Add">
+  Name: <input type="text" name="name">
+  Link: <input type="text" name="link">
+  <input type="submit" value="Add">
 </form>
+</div>
+
+<h3>Favorites</h3>
+<% @bookmarks.each do |site|%>
+  Name: <%= site['name'] %> || Link: <a href="<%= site['link'] %>" target="_blank"><%= site['link'] %></a><br>
+<% end %>
