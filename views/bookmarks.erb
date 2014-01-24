@@ -1,9 +1,18 @@
-<% @bookmarks.each do |mark| %>
- <a href="http://<%= mark["url"]%>" target="blank"><%= mark["name"] %></a><br>
-<% end %>
+	<form action="/bookmarks" method="post">
+		<input type="text" name="name" placeholder="Name">
+		<input type="text" name="url" placeholder="URL"><br>
+		<input type="submit" value="CREATE">
+	</form>
+<!-- end of form div -->
+</div>
 
-<form action="/bookmarks" method="post">
-	Name: <input type="text" name="name">
-	URL: <input type="text" name="url">
-	<input type="submit" value="CREATE">
-</form>
+<div class="bookmarks">
+	<h1>Your Bookmarked Pages</h1>
+	<ul>
+	<% @bookmarks.each do |mark| %>
+		<li>
+	 <a href="http://<%= mark["url"]%>" target="blank"><%= mark["name"] %></a><br>
+	 	</li>
+	<% end %>
+	</ul>
+</div>
