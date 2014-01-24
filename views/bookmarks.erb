@@ -1,9 +1,9 @@
-<div class="col-md-6">
+<div class="col-md-5">
 	<div class="boxy">
 		<div class="page-header">
 			<h1>Enter a new bookmark</h1>
 		</div>
-		<form class="form-inline" role="form" action="/bookmarks" method="POST">
+		<form class="form" role="form" action="/bookmarks" method="POST">
 			<div class="form-group">
 		    <input type="text" class="form-control" id="category" name="category" placeholder="Bookmark Category">
 		  </div>
@@ -14,8 +14,8 @@
 		</form>
 	</div>
 </div>
-<div class="col-md-6">
-	<div class="boxy">
+<div class="col-md-7">
+	<div class="boxy overflow">
 		<div class="page-header">
 			<h1>Bookmark List</h1>
 		</div>
@@ -24,4 +24,5 @@
 			<a href="http://<%= bookmark['url'] %>" target="_blank"><%= bookmark['url'] %></a>
 		<% end %>
 	</div>
+</div>
 </div>

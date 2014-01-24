@@ -1,0 +1,33 @@
+<div class="col-md-5">
+	<div class="boxy">
+		<div class="page-header">
+			<h1>Enter a new contact</h1>
+		</div>
+		<form class="form" role="form" action="/contacts" method="POST">
+			<div class="form-group">
+		    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+		  </div>
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+		  </div>
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</div>
+<div class="col-md-7">
+	<div class="boxy overflow">
+		<div class="page-header">
+			<h1>Contact List</h1>
+		</div>
+		<% @contacts.each do |contact| %>
+			<div class="boxy">
+				<h3><%= contact['name'] %></h3>
+				<p class="lead"><%= contact['phone'] %></p>
+				<p class="lead"><%= contact['email'] %></p>
+			</div>
+		<% end %>
+	</div>
+</div>
