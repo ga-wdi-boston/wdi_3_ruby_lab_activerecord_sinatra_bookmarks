@@ -5,7 +5,7 @@ require 'pg'
 
 def run_sql(sql)
 	# sets up a connection
-	db = PG.connect(dbname: 'url')
+	db = PG.connect(dbname: 'bookmarks')
 	# pass it an actual sql query
 	result = db.exec(sql)
 	# close the database
@@ -14,10 +14,10 @@ def run_sql(sql)
 	result
 end
 
-# get '/bookmarks' do
-# 	@people = run_sql("SELECT * FROM people")
-# 	erb :people
-# end
+get '/bookmarks' do
+	@bookmarks = run_sql("SELECT * FROM bookmarks") # this is a hash, i think? not sure
+	erb :bookmarks
+end
 
 # post '/bookmarks' do
 # 	# these need to come in from a form submission

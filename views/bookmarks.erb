@@ -1,0 +1,11 @@
+<% @bookmarks.each do |bookmark| %>
+	<div class="bookmark_name">
+	<%= bookmark["name"] %>
+	</div>
+<% end %>
+
+<% @bookmarks.each do |bookmark| %>
+	<div class="bookmark_url">
+	<%= bookmark["link"] %>
+	</div>
+<% end %>
