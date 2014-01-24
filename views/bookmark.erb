@@ -1,10 +1,19 @@
-<% @bookmark.each do |bookmark| %>
-  <%= bookmark %>
-<% end %>
+<div>
+  <h1>Bookmarks:</h1>
+  <% @bookmark.each do |bookmark| %>
+    <div>
+    <% array = bookmark.map { |key, value| value } %>
+    </div>
+<dl>
+  <dt> <%= array[1] %> </dt>
+    <dd> <%= array[2] %> </dd>
+</dl>
+  <% end %>
+</div>
 
 
 <form action="/bookmark" method="POST">
-  Site_Name: <input type="text" name="site_name">
+  Site Name: <input type="text" name="site_name">
   URL: <input type="text" name="url">
   <input type="submit" value="Create">
 </form>
