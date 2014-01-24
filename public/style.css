@@ -68,7 +68,7 @@ form input[type=submit]:hover {
 	color: white;
 	font-family: helvetica, sans-serif;
 	margin-bottom: 50px;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 .bookmarks {
@@ -82,23 +82,24 @@ form input[type=submit]:hover {
 	color: white;
 	font-family: helvetica, sans-serif;
 	margin-bottom: 20px;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 .bookmarks li {
-	color: white;
 	font-family: helvetica, sans-serif;
 	margin-bottom: 5px;
 	padding-top: 10px;
 }
 .bookmarks a {
 	text-decoration: none;
-	color: white;
+	color: #1abc9c;
 	font-size: 20px;
+	transition: color .5s;
+	-webkit-transition: color .5s; /* Safari */
 	transition: font-size .3s;
 	-webkit-transition: font-size .3s; /* Safari */
+
 }
 .bookmarks a:hover {
-	text-decoration: underline;
-	color: white;
+	color: #2980b9;
 	font-size: 30px;
 }
