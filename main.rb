@@ -15,13 +15,13 @@ def run_sql(sql)
 end
 
 get '/bookmarks' do
-	@bookmarks = run_sql("SELECT * FROM bookmarks") # this is a hash, i think? not sure
+	@bookmarks = run_sql("SELECT * FROM bookmarks") # this is a hash
 	erb :bookmarks
 end
 
-# post '/bookmarks' do
-# 	# these need to come in from a form submission
-# 	name, phone = params[:name], params[:phone]
-# 	run_sql("INSERT INTO people (name, phone) VALUES ('#{name}', '#{phone}')")
-# 	redirect to '/people'
-# end
+post '/bookmarks' do
+	# these need to come in from a form submission
+	name, link = params[:name], params[:link]
+	run_sql("INSERT INTO bookmarks (name, link) VALUES ('#{name}', '#{link}')")
+	redirect to '/bookmarks'
+end

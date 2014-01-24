@@ -9,3 +9,9 @@
 	<%= bookmark["link"] %>
 	</div>
 <% end %>
+
+<form action="/bookmarks" method="POST">
+	Name: <input type="text" name="name">
+	URL: <input type="text" name="link">
+	<input type="submit" value="Create">
+</form>
