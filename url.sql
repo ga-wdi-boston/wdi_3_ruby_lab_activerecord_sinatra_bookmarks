@@ -1,0 +1,8 @@
+
+DROP TABLE IF EXISTS url;
+
+CREATE TABLE url (
+	id SERIAL PRIMARY KEY,
+	name TEXT,
+	url TEXT
+);

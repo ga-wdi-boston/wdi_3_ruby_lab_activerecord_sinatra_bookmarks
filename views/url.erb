@@ -1,0 +1,10 @@
+<% @url.each do |url|%>
+	<%= url %>
+<% end %>
+
+<form action="/url" method="POST">
+
+	Name: <input type="text" name="name">
+	url: <input type="text" name= "url">
+	<input type="submit" value="Create">
+</form>
