@@ -1,7 +1,6 @@
-# Sinatra URL Shortner w/Comments
+# Sinatra Bookmarker
 
-Create a URL shortner. 
+Create a sinatra app that you can use to store a list of URLs in a database. 
 
-There should be an index page that lists all shortened URLs. On this page there should be a 'discuss' link to a discussion page about each URL. On that page you can create comments about the URL. 
+You should be able to create a new 'url' in the a database table from the web, and view a list of all of your bookmarked URLs. 
 
-You can either have a 'new' page for creating new shortened URLs, or you can do it from the index page with a form. 
