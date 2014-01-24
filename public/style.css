@@ -1,0 +1,38 @@
+h1 {
+  color: #7fbf7f;
+  text-align: center;
+  font-size: 4em;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+li {
+  list-style: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.bookmarks {
+  border: 2px black solid;
+}
+
+a:visited{
+  color: #d3d3d3;
+}
+
+a:link {
+  color: white;
+}
+
+#form {
+  margin-left: 29%;
+}
+
+body {
+  background-image:url('http://thefederalist.com/wp-content/uploads/2014/01/5399905776_d5b05ff08a_o.jpg');
+}
+
+form {
+  font-size: 2em;
+  font-weight: bold;
+  color: #7fbf7f;
+}
