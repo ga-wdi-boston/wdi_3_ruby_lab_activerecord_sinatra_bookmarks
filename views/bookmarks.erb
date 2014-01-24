@@ -1,0 +1,12 @@
+
+<h1>Bookmarks</h1>
+<ul>
+<% @urls.each do |bookmark| %>
+	<li><%= x = bookmark.flatten.join(": ") %></li>
+<% end %>
+</ul>
+<form action="/bookmarks" method="POST">
+	NAME:<input type="text" name="name">
+	URL:<input type="text" name="url">
+	<input type="submit" name="Create">
+</form>
