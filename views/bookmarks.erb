@@ -1,1 +1,9 @@
-<h1>stuff</h1>
+<% @bookmarks.each do |mark| %>
+ <a href="http://<%= mark["url"]%>" target="blank"><%= mark["name"] %></a><br>
+<% end %>
+
+<form action="/bookmarks" method="post">
+	Name: <input type="text" name="name">
+	URL: <input type="text" name="url">
+	<input type="submit" value="CREATE">
+</form>
