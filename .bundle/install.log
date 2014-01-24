@@ -1,0 +1,12 @@
+# Logfile created on 2014-01-24 16:10:58 -0500 by logger.rb/44203
+I, [2014-01-24T16:10:58.604083 #50533]  INFO -- : 0:  backports (3.4.0) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T16:10:58.604365 #50533]  INFO -- : 0:  multi_json (1.8.4) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T16:10:58.604593 #50533]  INFO -- : 0:  pg (0.17.1) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/pg-0.17.1.gemspec
+I, [2014-01-24T16:10:58.604809 #50533]  INFO -- : 0:  rack (1.5.2) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T16:10:58.605025 #50533]  INFO -- : 0:  rack-protection (1.5.2) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T16:10:58.605245 #50533]  INFO -- : 0:  rack-test (0.6.2) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T16:10:58.605459 #50533]  INFO -- : 0:  tilt (1.4.1) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T16:10:58.605681 #50533]  INFO -- : 0:  sinatra (1.4.4) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T16:10:58.605893 #50533]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T16:10:58.606103 #50533]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/Prescott/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T16:10:58.606307 #50533]  INFO -- : 0:  bundler (1.5.1) from /Users/Prescott/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
