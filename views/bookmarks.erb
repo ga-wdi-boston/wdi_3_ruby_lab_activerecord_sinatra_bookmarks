@@ -2,7 +2,7 @@
 <h1>Bookmarks</h1>
 <ul>
 <% @urls.each do |bookmark| %>
-	<li><%= x = bookmark.flatten.join(": ") %></li>
+	<li><%= bookmark['name']%> <a href="<%= bookmark['url'] %>" target="_blank"> <%=bookmark['url'] %> </a> </li>
 <% end %>
 </ul>
 <form action="/bookmarks" method="POST">
