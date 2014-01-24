@@ -27,8 +27,8 @@ post '/bookmarks' do
   redirect to '/bookmarks'
 end
 
-# post '/people/delete' do
-#   name = params[:name]
-#   run_sql("DELETE FROM people WHERE name = '#{name.capitalize}'")
-#   redirect to '/people'
-# end
+post '/bookmarks/delete' do
+  name = params[:name]
+  run_sql("DELETE FROM bookmarks WHERE name = '#{name.capitalize}'")
+  redirect to '/bookmarks'
+end
