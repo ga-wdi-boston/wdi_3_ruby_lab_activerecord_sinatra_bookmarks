@@ -1,0 +1,25 @@
+
+<div>
+<form action="/url" method="POST">
+	<div>
+		<h2 class = "hh">Input URLs you want to save: <br></h2>
+		<input class = "text" type="text" name="url">
+	</div>
+	<div class = "create">
+	<input class ="input"  type="submit" value="Create">
+	</div>
+</form>
+</div>
+<br><br><br>
+<h2 class = "hhh">Here are your bookmarks:</h2>
+<div class="output">
+<ol>
+<% @url.each do |url|%>
+	
+	<li><em>
+	<%= url['urls'] %>
+	</em></li>
+	
+<% end %>
+</ol>
+</div>

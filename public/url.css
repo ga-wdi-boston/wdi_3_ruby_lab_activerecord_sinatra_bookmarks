@@ -1,0 +1,37 @@
+
+
+.hh{
+	text-align: center;
+	color: black;
+}
+.hhh{
+	padding-left: 300px;
+
+}
+.input{
+	background-color: red;
+	height: 30px;
+	width: 60px
+}
+.create{
+	text-align: center;
+}
+
+.output{
+	padding-left: 400px;
+	font-size: 35px
+}
+.text{
+	border-color: red;
+	height: 30px;
+	font-size: 20px;
+	width: 500px;
+	text-align: center;
+	position: relative;
+	left: 31%;
+	
+}
+
+body {
+	background-color: grey;
+}
