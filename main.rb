@@ -17,7 +17,6 @@ end
 get '/bookmarks' do
   @categories = get_categories.values.flatten.uniq # Array of categories
   @bookmarks = run_sql("SELECT * FROM bookmarks")
-  binding.pry
   erb :bookmarks
 end
 
