@@ -1,0 +1,19 @@
+<% @links.each do |link| %>
+	Original link: <a href="<%= link.original %>"><%= link.original %><br/></a>
+	New Link: <a href="<%= link.short %>"><%= link.short %></a><br/>
+	<a href="/discuss/<%= link.id %>">Discussion Page</a>
+
+		<form action="/link/<%= link.id %>/delete" method="post">
+			<button type="submit">remove</button>
+		</form>
+		<br/>
+		<hr>
+
+<% end %>
+
+
+<h3>Shorten a link</h3>
+	<form action="/link/new" method="post">
+		<div><label for="author">Original Link:</label><input type="text" name="original" class="fieldset" /></div><br/>
+		<button type="submit" class="button_margin">Submit</button>
+	</form>

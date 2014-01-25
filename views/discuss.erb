@@ -1,0 +1,28 @@
+Original Link: <%= @link.original %><br/>
+Shortened Link: <%= @link.short %>
+
+
+		<h3>Comments:</h3> 
+		<% @link.comments.each do |comment| %>
+	
+			<p>
+			<%= comment.author %><br/>
+			<%= comment.created_at.strftime("Created %m/%d/%Y at %I:%M%p") %><br/><br/>
+			<%= comment.body %>
+			</p><br/>
+
+			<form action="/comment/<%= comment.id %>/delete" method="post">
+				<button type="submit">Delete</button>
+			</form>
+			<hr>
+			<% end %>
+
+<br/>
+			<h3>Submit a comment</h3>
+	<form action="/comment/<%= @link.id %>/new" method="post">
+		<div><label for="author">Author:</label><input type="text" name="author" class="fieldset" /></div><br/>
+		<div><label for="body">Body:</label><textarea name="body" cols="60" rows="10" class="fieldset"></textarea></div>
+		<br/><br/>
+		<button type="submit" class="button_margin">Submit comment</button>
+	</form>
+
