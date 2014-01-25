@@ -1,0 +1,17 @@
+<h2>discuss</h2>
+
+<span class="original">Original: <a href="http://<%= @short.original %>"><%= @short.original %></a></span>
+<span class="short">Short URL: <a href="/shortener/<%= @short.id %>"><%= @short.url %></a></span>
+
+<h3>Submit a Comment: </h3>
+<form action="/comment/<%= @short.id %>/new" method="post">
+	<div>Author: <input type='string' name='author' /></div>
+	<div>Body: <textarea name="body" cols=40 rows=10></textarea></div>
+	<button type="submit">Add Comment</button>
+</form>
+
+<h3>Comments:</h3>
+<% @short.comments.each do |comment| %>
+<div class="comment_author"><%= comment.author %></div>
+<div class="comment_body"><%= comment.body %></div>
+<% end %>
