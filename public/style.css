@@ -1,0 +1,27 @@
+body, h1 a {
+	font-family: Helvetica;
+	color: #484848;
+}
+
+a {
+	color: #8b9e8d;
+	text-decoration: none;
+}
+
+#new-link {
+	margin-top: 4em;
+}
+
+.comments_links a {
+	font-size: 11px;
+	color: #484848;
+}
+
+.comments_links a:hover {
+	text-decoration: underline;
+}
+
+#comments {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}

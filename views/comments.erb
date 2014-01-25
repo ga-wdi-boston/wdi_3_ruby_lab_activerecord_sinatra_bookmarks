@@ -1,0 +1,17 @@
+<p>
+	<%= @link.link %><br />
+	<a href="http://localhost:4567/<%= @link.shortened %>" target='_blank'>localhost:4567/<%= @link.shortened %></a>
+</p>
+
+<div id='comments'>
+	<strong>Comments</strong>
+	<% @link.comments.each do |comment| %>
+		<p><%= comment.body %></p>
+	<% end %>
+</div>
+
+<strong>New Comment</strong>
+<form action ='/create_comment/<%= @link.id %>' method='post'>
+	<textarea name='body' cols=60 rows=6></textarea><br />
+	<button type='submit'>add comment</button>
+</form>
