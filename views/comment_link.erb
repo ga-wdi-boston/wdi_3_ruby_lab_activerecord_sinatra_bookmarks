@@ -1,0 +1,11 @@
+	<p> <%= link["long_url"] %> </p>
+	<p> <a href="<%=link["long_url"]%>"> <%= link["short_url"] %> </a> </p>
+	<div class='comment_bar'>
+	<form action='/comment/create' method='post'>
+	<span class='enter_comment'>
+		<input type="text" name="author">author name</input>
+		<textarea name="body" cols=80 rows=1>type your comment here</textarea>
+	</span>
+	<span class='comment_button'><button type="submit">Comment</button>
+	</form>
+</div>

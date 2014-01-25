@@ -1,0 +1,13 @@
+<div class='link_bar'>
+	<form action='/link/shorten' method='post'>
+	<span class='enter_long_url'><textarea name="long_url" cols=80 rows=1></textarea></span>
+	<span class='shorten_button'><button type="submit">Shorten</button>
+	</form>
+</div>
+<div class='row'>
+	<% @links.each do |link| %>
+	<p> <%= link["long_url"] %> </p>
+	<p> <a href="<%=link["long_url"]%>"> <%= link["short_url"] %> </a> </p>
+	<p><a href="/link/<%= link.id %>/comments">Comments</a></p>
+	<% end %>
+</div>
