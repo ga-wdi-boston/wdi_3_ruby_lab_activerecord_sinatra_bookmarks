@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'pg'
+require 'pry'
 
 # This helps us run our sql commands
 def run_sql(sql)
@@ -11,14 +12,18 @@ def run_sql(sql)
 end
 
 get '/bookmarks' do
-	@title = 'bookarks'
-	@bookmarks = run_sql("SELECT * FROM bookmarks ORDER BY id DESC")
+	@title = 'bookmarks'
+	# Get all categories
+	# Iterate over the categories, selecting the url
+	# Where the category matches.
+	@categories = run_sql("SELECT DISTINCT category FROM bookmarks")
+
 	erb :bookmarks
 end
 
 post '/bookmarks' do
-	category, url = params[:category], params[:url]
-	run_sql("INSERT INTO bookmarks (category, url) VALUES ('#{category}', '#{url}')")
+	category, url, name = params[:category], params[:url], params[:name]
+	run_sql("INSERT INTO bookmarks (category, name, url) VALUES ('#{category}', '#{name}', '#{url}')")
 	redirect to '/bookmarks'
 end
 

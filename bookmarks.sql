@@ -5,3 +5,5 @@ CREATE TABLE bookmarks (
 	category TEXT,
 	url TEXT
 );
+
+ALTER TABLE bookmarks ADD COLUMN name TEXT;

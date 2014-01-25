@@ -5,10 +5,13 @@
 		</div>
 		<form class="form" role="form" action="/bookmarks" method="POST">
 			<div class="form-group">
-		    <input type="text" class="form-control" id="category" name="category" placeholder="Bookmark Category">
+		    <input type="text" class="form-control" id="category" name="category" placeholder="Bookmark Category" autofocus required>
 		  </div>
 		  <div class="form-group">
-		    <input type="text" class="form-control" id="url" name="url" placeholder="Bookmark URL">
+		    <input type="text" class="form-control" id="name" name="name" placeholder="Name of Site" required>
+		  </div>
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="url" name="url" placeholder="Bookmark URL" required>
 		  </div>
 		  <button type="submit" class="btn btn-primary">Submit</button>
 		</form>
@@ -19,10 +22,15 @@
 		<div class="page-header">
 			<h1>Bookmark List</h1>
 		</div>
-		<% @bookmarks.each do |bookmark| %>
-			<h3><%= bookmark['category'] %></h3>
-			<a href="http://<%= bookmark['url'] %>" target="_blank"><%= bookmark['url'] %></a>
-		<% end %>
+			<% @categories.each do |c| %>
+				<% @bookmarks = run_sql("SELECT * FROM bookmarks WHERE category='#{c['category']}'") %>
+				<h2><%= c['category'] %></h2>
+				<% @bookmarks.each do |b| %>
+					<div>
+						<a href="http://<%= b['url'] %>" target="_blank"><%= b['name'].upcase %></a>
+					</div>
+				<% end %>
+			<% end %>
 	</div>
 </div>
 </div>
