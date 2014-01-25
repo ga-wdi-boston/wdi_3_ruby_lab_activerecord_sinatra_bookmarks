@@ -1,0 +1,19 @@
+<div class="input-form">
+  <div><h2>Shorten a link here:</h2></div>
+     <div class="form">
+     <form action="/shortlink/shorten" method="post">
+       URL: <input type="text" name="url"><button type="submit">Shorten!</button></div>
+     </form>
+     </div>
+
+<div class="all_links_index">
+<% @links.each do |link| %>
+
+  <div class="link_index">
+    <a href="<%=link.url%>"><%= link.url %></a>  
+    <a href="/shortlink/<%=link.id%>">http://localhost/4567/<%= link.short_url %></a>  
+    <a href="/shortlink/discuss/<%= link.id %>">discuss</a></div>
+    <form action="/shortlink/<%= link.id %>/delete-link", method="post"><button type="submit">delete</button></form>
+
+<% end %>
+</div>

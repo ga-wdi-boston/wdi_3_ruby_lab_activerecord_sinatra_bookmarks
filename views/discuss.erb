@@ -1,0 +1,24 @@
+<div class="link-display">
+  <h2>
+  <div>Your link: <%= @link.url %></div>
+  <div>Shortened to: localhost:4567/shortlink/<%= @link.short_url %></div>
+  <div>Created at: <%= @link.created_at %></div>
+  </h2>
+</div>
+
+<% @link.comments.each do |comment| %>
+  <div class="comment">  
+    <div><%= comment.body %></div>
+    <div>posted by <%= comment.author %> on <%= comment.created_at %></div>
+  </div>
+<% end %>
+
+<div class="comment-form">
+  <div><h2>Add your comment:</h2></div>
+     <div class="form">
+     <form action="/shortlink/discuss/<%= @link.id %>/add-comment" method="post">
+       Your name: <input type="text" name="author">
+       Your comment: <input type="text" name="body">
+       <button type="submit">Comment!</button></div>
+     </form>
+     </div>
