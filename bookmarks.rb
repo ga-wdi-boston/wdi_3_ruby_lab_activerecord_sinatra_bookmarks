@@ -17,9 +17,15 @@ get '/bookmarks' do
 	erb :bookmark
 end
 
+get '/bookmarks/search' do
+	@tag = params[:tag_search]
+	@list = run_sql("SELECT * FROM bookmarks WHERE tag = '#{@tag}'")
+	erb :bookmark
+end
+
 post '/bookmarks' do
-	name, url = params[:name], params[:url]
-	run_sql("INSERT INTO bookmarks (name, url) VALUES ('#{name}', '#{url}')")
+	name, url, tag = params[:name], params[:url], params[:tag]
+	run_sql("INSERT INTO bookmarks (name, url, tag) VALUES ('#{name}', '#{url}', '#{tag}')")
 	redirect to '/bookmarks'
 end
 
