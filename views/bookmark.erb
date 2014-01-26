@@ -13,29 +13,31 @@
 <div class='container black'>
 	<div class='list'>
 
-		<h2>EXISTING BOOKMARKS</h2>
+	<h2>EXISTING BOOKMARKS</h2>
 
-		<form action='/bookmarks/search' method='GET'>
-			<input class='right' type='search' name='tag_search' results='5' placeholder='Search by tag'><input class='button' type='submit' value='SEARCH'></form>
-			<form action='/bookmarks' method ='GET'><input class='button' type='submit' value='VIEW ALL'></form>
-		<hr>
-			<ul>
-				<% @list.each do |entry| %>
-					<ul class='entry'>
-						<li><%= entry['name'] %></li>
-						<li><a href='<%= entry['url'] %>' target='_blank'>Visit page</a></li>
+	<form action='/bookmarks/search' method='GET'>
+		<input class='right' type='search' name='tag_search' results='5' placeholder='Search by tag'><input class='button' type='submit' value='SEARCH'></form>
+		<form action='/bookmarks' method ='GET'><input class='button' type='submit' value='VIEW ALL'>
+	</form>
+	<hr>
 
-						<li>
-							<form action='/bookmarks/del' method='POST'>
-								<input type='hidden' name='name' value='<%= entry['name'] %>'>
-								<input type='hidden' name='url' value='<%= entry['url'] %>'>
-								<input class='button' type='submit' value='REMOVE'>
-							</form>
-							<div class='tag'><%if entry['tag'] != nil && entry['tag'] != ''  %><%= entry['tag'] %><% else %><%= '-'%><%end%></div>
-						</li>
-					</ul>
-				<% end %>
+	<ul>
+		<% @list.each do |entry| %>
+			<ul class='entry'>
+				<li><%= entry['name'] %></li>
+				<li><a href='<%= entry['url'] %>' target='_blank'>Visit page</a></li>
+
+				<li>
+					<form action='/bookmarks/del' method='POST'>
+						<input type='hidden' name='name' value='<%= entry['name'] %>'>
+						<input type='hidden' name='url' value='<%= entry['url'] %>'>
+						<input class='button' type='submit' value='REMOVE'>
+					</form>
+					<div class='tag'><%if entry['tag'] != nil && entry['tag'] != '' %><%= entry['tag'] %><% else %><%= '-'%><%end%></div>
+				</li>
 			</ul>
+		<% end %>
+	</ul>
 
 	</div>
 </div>
