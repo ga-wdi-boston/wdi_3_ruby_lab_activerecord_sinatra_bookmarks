@@ -1,30 +1,19 @@
-<div id='top'>
-	<div class='container'>
-		<div class='inner-container'>
+<div class='container'>
+	<h1>Bookmarks</h1>
 
-			<h1>Bookmarks</h1>
-
-		</div>
-	</div>
-
-</div>
-
-<div id='input' class='color1'>
-	<div class='container black'>
-		<div class='form'>
-
-				<form action='/app' method='post'>
-					Site: <input type='text'name='name' placeholder='Site nickname'>
-					URL: <input type='text' name='url' placeholder='Paste URL here'>
-					<input type='submit' value='ADD'>
-				</form>
-
-		</div>
+	<div id='form'>
+		<form action='/bookmarks' method='post'>
+			<input type='text'name='name' placeholder='Site nickname'><br>
+			<input type='text' name='url' placeholder='Paste URL here'>
+			<input class='button' type='submit' value='ADD'>
+		</form>
 	</div>
 </div>
 
 <div class='container black'>
-	<div class='inner-container'>
+	<div class='list'>
+
+		<h2>EXISTING BOOKMARKS</h2><hr>
 			<ul>
 				<% @list.each do |entry| %>
 					<ul class='entry'>
@@ -32,10 +21,10 @@
 						<li><a href='<%= entry['url'] %>' target='_blank'>Visit page</a></li>
 
 						<li>
-							<form action='/app/del' method='POST'>
+							<form action='/bookmarks/del' method='POST'>
 								<input type='hidden' name='name' value='<%= entry['name'] %>'>
 								<input type='hidden' name='url' value='<%= entry['url'] %>'>
-								<input type='submit' value='REMOVE'>
+								<input class='button' type='submit' value='REMOVE'>
 							</form>
 						</li>
 					</ul>

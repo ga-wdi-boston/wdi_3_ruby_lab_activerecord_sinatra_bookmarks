@@ -12,19 +12,19 @@ def run_sql(sql)
 	result
 end
 
-get '/app' do
+get '/bookmarks' do
 	@list = run_sql("SELECT * FROM bookmarks")
 	erb :bookmark
 end
 
-post '/app' do
+post '/bookmarks' do
 	name, url = params[:name], params[:url]
 	run_sql("INSERT INTO bookmarks (name, url) VALUES ('#{name}', '#{url}')")
-	redirect to '/app'
+	redirect to '/bookmarks'
 end
 
-post '/app/del' do
+post '/bookmarks/del' do
 	name, url = params[:name], params[:url]
 	run_sql("DELETE FROM bookmarks WHERE name = '#{name}' AND url = '#{url}'")
-	redirect to '/app'
+	redirect to '/bookmarks'
 end
