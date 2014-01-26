@@ -14,6 +14,10 @@ def get_categories
   run_sql("SELECT category FROM bookmarks")
 end
 
+get '/' do
+  redirect to '/bookmarks'
+end
+
 get '/bookmarks' do
   @categories = get_categories.values.flatten.uniq # Array of categories
   @bookmarks = run_sql("SELECT * FROM bookmarks")
