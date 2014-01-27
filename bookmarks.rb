@@ -10,14 +10,6 @@ def run_sql(sql)
 	result
 end
 
-get '/becky' do
-  	erb :becky_hello
-end
-
-get '/tom'  do
-	 "hey tom how are you?"
-end
-
 get '/websites' do
   @websites = run_sql("SELECT * FROM bookmarks")
 	erb :websites
