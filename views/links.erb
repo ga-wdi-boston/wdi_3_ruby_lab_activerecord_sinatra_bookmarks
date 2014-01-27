@@ -1,0 +1,13 @@
+<% @links.each do |link| %>
+  <%= link %>
+<% end %>
+
+
+<form action="/links" method="POST">
+  Title: <input type="text" name="title">
+  URL: <input type="text" name="url">
+  Category: <input type="text" name="category">
+  Interest: <input type="integer" name="interest">
+  Recently Updated: <input type="boolean" name="recently_updated">
+  <input type="submit" value="Create">
+</form>
