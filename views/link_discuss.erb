@@ -1,0 +1,21 @@
+<div class="post-container">
+Long Link: <a href="<%= @link.long_url %>">
+		<%=@link.long_url%></a></br>
+	Short Link: 
+	<a href="<%= @link.short_url %>">
+		<%=@link.short_url%></a>
+	</br>
+</div>
+
+
+<% @link.discussions.each do |discussion|%>
+	Author: <%= discussion.author%> 
+	</br><%= discussion.body%>
+	</br></br>
+	<% end %> 
+
+<form action="/links/comment/<%=@link.id%>" method="post">
+	<div>Author: <input type="string" name="author" /></div>
+	<div>Body: <textarea name="body" cols="60" rows="10"></textarea></div>
+	<button type="submit">Create Comment</button>
+</form>
