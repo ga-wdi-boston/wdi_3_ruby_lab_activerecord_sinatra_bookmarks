@@ -1,0 +1,27 @@
+<section class='bookmark_control'>
+  <article>
+    <h3>Add a bookmark</h3>
+    <form action='/bookmarks' method='POST'>
+      Name: <input type='text' name='name'><br>
+      URL: <input id='css_fix' type='text' name='url'><br>
+      <input type='submit' value='Save'>
+    </form>
+  </article>
+
+  <article>
+    <h3>Remove a bookmark</h3>
+    <form action='/bookmarks/delete' method='POST'>
+      Name: <input type='text' name='name'><br>
+      <input type='submit' value='Delete'>
+    </form>
+  </article>
+</section>
+
+<section class='bookmark_index'>
+  <h1><u>My Bookmarks</u></h1>
+  <% @bookmarks.each do |bookmark| %>
+    <article class='bookmark'>
+      <a href=<%= bookmark['url']%> target='_blank'><%= bookmark['name']%></a>
+    </article>
+  <% end %>
+</section>
