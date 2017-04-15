@@ -1,0 +1,16 @@
+body {
+	font-family: Helvetica;
+	background-color: LightYellow;
+}
+
+a:visited {
+	color: blue;
+}
+
+h1 {
+	color: blue;
+}
+
+#left {
+	padding-left: 30px;
+}
