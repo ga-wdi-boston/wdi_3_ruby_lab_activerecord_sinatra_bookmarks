@@ -1,0 +1,105 @@
+.image {
+	background-image: url('mountain.jpg');
+	background-size: cover;
+  width: 100%;
+  height: 1000px;
+}
+
+.position {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.center {
+	padding: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 800px;
+}
+
+h1 {
+	color: blue;
+	font-size: 50px;
+}
+
+form input[type=text] {
+	font-size: 20px;
+	border-radius:2px;
+	width: 200px;
+	height: 30px;
+	padding-left: 4px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border: none;
+}
+form input[type=submit] {
+	font-size: 20px;
+	border-radius:2px;
+	width: 200px;
+	height: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #3498db;
+	border: none;
+	color: white;
+	transition: background-color 1s;
+	-webkit-transition: background-color 1s; /* Safari */
+
+}
+form input[type=submit]:hover {
+	background-color: #34495e;
+}
+
+.form {
+	background-color: rgba(0,0,0,0.6);
+	margin-top: 100px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-radius:5px;
+	box-shadow: 2px 2px 10px #888888;
+}
+
+.form h1 {
+	color: white;
+	font-family: helvetica, sans-serif;
+	margin-bottom: 50px;
+	padding-top: 20px;
+}
+
+.bookmarks {
+	background-color: rgba(0,0,0,0.6);
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-radius:5px;
+	box-shadow: 2px 2px 10px #888888;
+}
+.bookmarks h1 {
+	color: white;
+	font-family: helvetica, sans-serif;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+.bookmarks li {
+	font-family: helvetica, sans-serif;
+	margin-bottom: 5px;
+	padding-top: 10px;
+}
+.bookmarks a {
+	text-decoration: none;
+	color: #1abc9c;
+	font-size: 20px;
+	transition: color .5s;
+	-webkit-transition: color .5s; /* Safari */
+	transition: font-size .3s;
+	-webkit-transition: font-size .3s; /* Safari */
+
+}
+.bookmarks a:hover {
+	color: #2980b9;
+	font-size: 30px;
+}

@@ -1,0 +1,18 @@
+	<form action="/bookmarks" method="post">
+		<input type="text" name="name" placeholder="Name">
+		<input type="text" name="url" placeholder="URL"><br>
+		<input type="submit" value="CREATE">
+	</form>
+<!-- end of form div -->
+</div>
+
+<div class="bookmarks">
+	<h1>Your Bookmarked Pages</h1>
+	<ul>
+	<% @bookmarks.each do |mark| %>
+		<li>
+	 <a href="http://<%= mark["url"]%>" target="blank"><%= mark["name"] %></a><br>
+	 	</li>
+	<% end %>
+	</ul>
+</div>
