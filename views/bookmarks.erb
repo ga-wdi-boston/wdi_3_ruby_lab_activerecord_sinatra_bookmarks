@@ -1,0 +1,19 @@
+<div class="col-lg-6">
+	<p class="lead">
+		<ul>
+		<% @urls.each do |bookmark| %>
+			<li><%= bookmark['name']%> <a href="<%= bookmark['url'] %>" target="_blank"> <%=bookmark['url'] %> </a> </li>
+		<% end %>
+		</ul>
+	</p>
+</div>
+
+
+<div class="col-lg-6">
+	<form action="/bookmarks" method="POST">
+		name:<input class="input-group" type="text" name="name">
+		url:<input class="input-group" type="text" name="url">
+		<p></p>
+		<button class="input-group" type="submit" name="Create">submit</button>
+	</form>
+</div>

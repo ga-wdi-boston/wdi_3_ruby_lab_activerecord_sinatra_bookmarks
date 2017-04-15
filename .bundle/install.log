@@ -1,0 +1,22 @@
+# Logfile created on 2014-01-24 16:04:41 -0500 by logger.rb/44203
+I, [2014-01-24T16:04:41.120314 #5694]  INFO -- : 0:  backports (3.4.0) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T16:04:41.120749 #5694]  INFO -- : 0:  multi_json (1.8.4) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T16:04:41.121083 #5694]  INFO -- : 0:  rack (1.5.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T16:04:41.121412 #5694]  INFO -- : 0:  rack-protection (1.5.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T16:04:41.121735 #5694]  INFO -- : 0:  rack-test (0.6.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T16:04:41.122064 #5694]  INFO -- : 0:  tilt (1.4.1) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T16:04:41.122387 #5694]  INFO -- : 0:  sinatra (1.4.4) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T16:04:41.122726 #5694]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T16:04:41.123065 #5694]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T16:04:41.123378 #5694]  INFO -- : 0:  bundler (1.5.1) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/bundler-1.5.1.gemspec
+I, [2014-01-24T16:22:06.678130 #5890]  INFO -- : 0:  backports (3.4.0) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T16:22:06.678581 #5890]  INFO -- : 0:  multi_json (1.8.4) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T16:22:06.678905 #5890]  INFO -- : 0:  pg (0.17.1) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/pg-0.17.1.gemspec
+I, [2014-01-24T16:22:06.679252 #5890]  INFO -- : 0:  rack (1.5.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T16:22:06.679589 #5890]  INFO -- : 0:  rack-protection (1.5.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T16:22:06.679933 #5890]  INFO -- : 0:  rack-test (0.6.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T16:22:06.680258 #5890]  INFO -- : 0:  tilt (1.4.1) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T16:22:06.680619 #5890]  INFO -- : 0:  sinatra (1.4.4) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T16:22:06.680956 #5890]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T16:22:06.681287 #5890]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T16:22:06.681604 #5890]  INFO -- : 0:  bundler (1.5.1) from /Users/janicesmith/.rvm/gems/ruby-2.1.0/specifications/bundler-1.5.1.gemspec
