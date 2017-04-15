@@ -1,0 +1,11 @@
+# Logfile created on 2014-01-24 16:38:40 -0500 by logger.rb/41954
+I, [2014-01-24T16:38:40.888714 #31726]  INFO -- : 0:  backports (3.4.0) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T16:38:40.889194 #31726]  INFO -- : 0:  multi_json (1.8.4) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T16:38:40.889546 #31726]  INFO -- : 0:  rack (1.5.2) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T16:38:40.889919 #31726]  INFO -- : 0:  rack-protection (1.5.2) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T16:38:40.890391 #31726]  INFO -- : 0:  rack-test (0.6.2) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T16:38:40.890858 #31726]  INFO -- : 0:  tilt (1.4.1) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T16:38:40.891305 #31726]  INFO -- : 0:  sinatra (1.4.4) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T16:38:40.891649 #31726]  INFO -- : 0:  sinatra-contrib (1.4.2) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T16:38:40.891955 #31726]  INFO -- : 0:  sinatra-reloader (1.0) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T16:38:40.892255 #31726]  INFO -- : 0:  bundler (1.5.1) from /home/anna/.rvm/gems/ruby-2.0.0-p353/specifications/bundler-1.5.1.gemspec
