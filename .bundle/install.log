@@ -1,0 +1,27 @@
+# Logfile created on 2014-01-24 16:11:40 -0500 by logger.rb/44203
+I, [2014-01-24T16:11:40.253805 #55652]  INFO -- : 0:  backports (3.4.0) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T16:11:40.254355 #55652]  INFO -- : 0:  multi_json (1.8.4) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T16:11:40.254756 #55652]  INFO -- : 0:  pg (0.17.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/pg-0.17.1.gemspec
+I, [2014-01-24T16:11:40.255116 #55652]  INFO -- : 0:  rack (1.5.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T16:11:40.255476 #55652]  INFO -- : 0:  rack-protection (1.5.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T16:11:40.255835 #55652]  INFO -- : 0:  rack-test (0.6.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T16:11:40.256189 #55652]  INFO -- : 0:  tilt (1.4.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T16:11:40.256547 #55652]  INFO -- : 0:  sinatra (1.4.4) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T16:11:40.256902 #55652]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T16:11:40.257261 #55652]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T16:11:40.257593 #55652]  INFO -- : 0:  bundler (1.5.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/bundler-1.5.1.gemspec
+I, [2014-01-24T18:21:10.712077 #56732]  INFO -- : 0:  backports (3.4.0) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T18:21:10.712501 #56732]  INFO -- : 0:  coderay (1.1.0) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/coderay-1.1.0.gemspec
+I, [2014-01-24T18:21:10.712804 #56732]  INFO -- : 0:  method_source (0.8.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/method_source-0.8.2.gemspec
+I, [2014-01-24T18:21:10.713110 #56732]  INFO -- : 0:  multi_json (1.8.4) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T18:21:10.713402 #56732]  INFO -- : 0:  pg (0.17.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/pg-0.17.1.gemspec
+I, [2014-01-24T18:21:10.713678 #56732]  INFO -- : 0:  slop (3.4.7) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/slop-3.4.7.gemspec
+I, [2014-01-24T18:21:10.713945 #56732]  INFO -- : 0:  pry (0.9.12.4) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/pry-0.9.12.4.gemspec
+I, [2014-01-24T18:21:10.714204 #56732]  INFO -- : 0:  rack (1.5.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T18:21:10.714498 #56732]  INFO -- : 0:  rack-protection (1.5.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T18:21:10.714765 #56732]  INFO -- : 0:  rack-test (0.6.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T18:21:10.715023 #56732]  INFO -- : 0:  tilt (1.4.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T18:21:10.715277 #56732]  INFO -- : 0:  sinatra (1.4.4) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T18:21:10.715556 #56732]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T18:21:10.715806 #56732]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T18:21:10.716044 #56732]  INFO -- : 0:  bundler (1.5.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/bundler-1.5.1.gemspec

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Bookmarks</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Latest compiled and minified JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="page">
+	<nav class="navbar navbar-inverse" role="navigation">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="container">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="/contacts">My Site</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="/contacts">Contacts</a></li>
+		      <li><a href="/bookmarks">Bookmarks</a></li>
+		    </ul>
+		  </div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>MY FAVORITE <%= @title.upcase %><small>...EVER</small></h1>
+			</div>
+			<div class="row">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
