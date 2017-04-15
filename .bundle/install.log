@@ -1,0 +1,27 @@
+# Logfile created on 2014-01-24 15:57:21 -0500 by logger.rb/44203
+I, [2014-01-24T15:57:21.248779 #74096]  INFO -- : 0:  backports (3.4.0) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T15:57:21.249443 #74096]  INFO -- : 0:  multi_json (1.8.4) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T15:57:21.250020 #74096]  INFO -- : 0:  pg (0.17.1) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/pg-0.17.1.gemspec
+I, [2014-01-24T15:57:21.250477 #74096]  INFO -- : 0:  rack (1.5.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T15:57:21.250977 #74096]  INFO -- : 0:  rack-protection (1.5.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T15:57:21.251372 #74096]  INFO -- : 0:  rack-test (0.6.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T15:57:21.251831 #74096]  INFO -- : 0:  tilt (1.4.1) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T15:57:21.252284 #74096]  INFO -- : 0:  sinatra (1.4.4) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T15:57:21.252731 #74096]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T15:57:21.253169 #74096]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T15:57:21.253598 #74096]  INFO -- : 0:  bundler (1.5.1) from /Users/KarenMak/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
+I, [2014-01-24T15:59:16.362287 #74120]  INFO -- : 0:  backports (3.4.0) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/backports-3.4.0.gemspec
+I, [2014-01-24T15:59:16.362715 #74120]  INFO -- : 0:  coderay (1.1.0) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/coderay-1.1.0.gemspec
+I, [2014-01-24T15:59:16.363093 #74120]  INFO -- : 0:  method_source (0.8.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/method_source-0.8.2.gemspec
+I, [2014-01-24T15:59:16.363446 #74120]  INFO -- : 0:  multi_json (1.8.4) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-01-24T15:59:16.363829 #74120]  INFO -- : 0:  pg (0.17.1) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/pg-0.17.1.gemspec
+I, [2014-01-24T15:59:16.364182 #74120]  INFO -- : 0:  slop (3.4.7) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/slop-3.4.7.gemspec
+I, [2014-01-24T15:59:16.364514 #74120]  INFO -- : 0:  pry (0.9.12.4) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/pry-0.9.12.4.gemspec
+I, [2014-01-24T15:59:16.364838 #74120]  INFO -- : 0:  rack (1.5.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-01-24T15:59:16.365205 #74120]  INFO -- : 0:  rack-protection (1.5.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-01-24T15:59:16.365549 #74120]  INFO -- : 0:  rack-test (0.6.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-24T15:59:16.365880 #74120]  INFO -- : 0:  tilt (1.4.1) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-01-24T15:59:16.366232 #74120]  INFO -- : 0:  sinatra (1.4.4) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-24T15:59:16.366572 #74120]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-01-24T15:59:16.366911 #74120]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/KarenMak/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-01-24T15:59:16.367235 #74120]  INFO -- : 0:  bundler (1.5.1) from /Users/KarenMak/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec

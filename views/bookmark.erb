@@ -1,0 +1,20 @@
+<div class='main'>
+  <h1>Bookmarks</h1>
+  <% @bookmark.each do |bookmark| %>
+    <div class="bookmarks">
+    <% array = bookmark.map { |key, value| value } %>
+    </div>
+    <ul>
+      <li><a href=<%= array[2] %>><%= array[1]%></a></li>
+    </ul>
+  <% end %>
+</div>
+
+<br>
+<div id='form'>
+<form action="/bookmark" method="POST">
+  Site Name: <input type="text" name="site_name">
+  URL: <input type="text" name="url">
+  <input type="submit" value="Create">
+</form>
+</div>
