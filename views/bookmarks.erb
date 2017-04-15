@@ -1,0 +1,16 @@
+<h1>Bookmarks</h1>
+<ul>
+<% @bookmarks.each do |bookmark| %>
+<!--	<li><%= bookmark.flatten.join(', ').gsub(/(id, \d, )/, '') %></li> -->
+<li>Name: <%= bookmark['name'] %>, <a href="<%= bookmark['address']%>" target="_blank"> <%= bookmark['address'] %>  </a> </li>
+
+<% end %>
+</ul>
+
+
+
+<form action='/bookmarks' method="POST">
+	Name: <input type="text" name="name">
+	Address: <input type="text" name="address">
+	<input type="submit" name="Submit">
+</form>
